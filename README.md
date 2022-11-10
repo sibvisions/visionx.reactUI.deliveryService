@@ -1,2 +1,3 @@
-# visionx.reactUI.projects
-Custom reactUI for VisionX projects demo application
+# About
+
+This repository contains a custom reactUI for the VisionX' projects demo application.
