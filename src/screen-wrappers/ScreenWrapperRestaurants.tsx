@@ -15,16 +15,18 @@ const CustomRating: FC<any> = (props) => {
     }, [selectedRow]);
 
     return (
-        <Rating
-            value={rating}
-            onChange={(e) => {
-                const setValuesReq = createSetValuesRequest();
-                setValuesReq.columnNames = [props.columnName];
-                setValuesReq.dataProvider = props.dataProvider;
-                setValuesReq.values = [e.value];
-                api.sendRequest(setValuesReq, REQUEST_KEYWORDS.SET_VALUES);
-            }}
-            cancel={false} />
+        <span style={{ width: "100%", height: "100%", display: "flex", alignItems: "center" }}>
+            <Rating
+                value={rating}
+                onChange={(e) => {
+                    const setValuesReq = createSetValuesRequest();
+                    setValuesReq.columnNames = [props.columnName];
+                    setValuesReq.dataProvider = props.dataProvider;
+                    setValuesReq.values = [e.value];
+                    api.sendRequest(setValuesReq, REQUEST_KEYWORDS.SET_VALUES);
+                }}
+                cancel={false} />
+        </span>
     )
 }
 
@@ -40,7 +42,8 @@ const CustomSlider: FC<any> = (props) => {
     }, [selectedRow]);
 
     return (
-        <span style={{ width: "100%", height: "100%", display: "flex", alignItems: "center" }}>
+        <span style={{ width: "100%", height: "100%", display: "flex", alignItems: "center", flexDirection: "column" }}>
+            <span>{sliderValue}</span>
             <Slider 
                 value={sliderValue}
                 onChange={(e) => setSliderValue(e.value as number)}
