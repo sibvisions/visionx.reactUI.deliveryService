@@ -66,8 +66,8 @@ const ScreenWrapperRestaurants: FC<any> = (props) => {
     const dataProviders = useDataProviders(props.screenName);
 
     const onOpen = () => {
-        //api.addCustomComponent("Res-O3_E_restaurants_RATING", <CustomRating screenName={props.screenName} dataProvider={dataProviders[0]} columnName="RATING" />)
-        //api.addCustomComponent("Res-O3_E_restaurants_MIN_ORDER_VALUE", <CustomSlider screenName={props.screenName} dataProvider={dataProviders[0]} columnName="MIN_ORDER_VALUE" />)
+        api.addCustomComponent("Res-O3_E_restaurants_RATING", <CustomRating screenName={props.screenName} dataProvider={dataProviders[0]} columnName="RATING" />)
+        api.addCustomComponent("Res-O3_E_restaurants_MIN_ORDER_VALUE", <CustomSlider screenName={props.screenName} dataProvider={dataProviders[0]} columnName="MIN_ORDER_VALUE" />)
     }
 
     return (
