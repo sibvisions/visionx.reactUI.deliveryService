@@ -13,6 +13,11 @@ For the rating, a rating component was used, which displays the number value as 
 
 For the minimum order value, a slider was used, which can set the minimum order value by sliding the slider.
 
+#### **Before**
+![custom-scren-before-image](./src/readme-images/custom-components-image-before.PNG)
+
+#### **After**
+
 ![custom-components-image](./src/readme-images/custom-components-image.PNG)
 
 The source can be found [here.](https://github.com/sibvisions/visionx.reactUI.deliveryService/blob/main/src/screen-wrappers/ScreenWrapperRestaurants.tsx)
@@ -20,9 +25,9 @@ The source can be found [here.](https://github.com/sibvisions/visionx.reactUI.de
 [Click here](https://github.com/sibvisions/reactUI.example/tree/main/src/readme-files/custom-component) for more information about custom-components.
 
 ### Custom Screen
-Additionally a custom-screen was added which isn't available in VisionX. 
+Additionally a custom-screen was added which isn't in the default application. 
 
-This custom-screen is a simple react-component which contains a ListBox where you can select different values. Next to it is a galleria which will then display the correct images based on the value.
+This custom-screen is a simple react-component which contains a ListBox where you can select different values. Next to it is a gallery which will then display the correct images based on the value.
 
 ![custom-screen-image](./src/readme-images/custom-screen-image.PNG)
 

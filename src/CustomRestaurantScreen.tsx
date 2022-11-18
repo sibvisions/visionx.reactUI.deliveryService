@@ -69,7 +69,7 @@ const CustomRestaurantScreen:FC<{}> = () => {
     }, [selectedRestaurant])
 
     const itemTemplate = (item:any) => {
-        return <img src={item.image} alt={item.alt} style={{ width: '100%', maxHeight: "700px" }} />
+        return <img src={item.image} alt={item.alt} style={{ width: '100%', maxHeight: "100%" }} />
     }
 
     const thumbnailTemplate = (item:any) => {
@@ -83,8 +83,12 @@ const CustomRestaurantScreen:FC<{}> = () => {
                 options={restaurants} 
                 onChange={(e) => setSelectedRestaurant(e.value)} 
                 optionLabel="label" />
-            <Galleria value={selectedImages} numVisible={3} item={itemTemplate} thumbnail={thumbnailTemplate} style={{ maxWidth: "1200px", margin: "auto" }} /> 
-            source: https://www.pexels.com/ 
+            <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
+                <span>source: https://www.pexels.com/ </span>
+                <Galleria value={selectedImages} numVisible={3} item={itemTemplate} thumbnail={thumbnailTemplate} style={{ maxWidth: "1200px", flex: "1" }} /> 
+            </div>
+            
+            
         </div>
         
     )
