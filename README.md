@@ -36,3 +36,6 @@ The source can be found [here.](https://github.com/sibvisions/visionx.reactUI.de
 [Click here](https://github.com/sibvisions/reactUI.example/tree/main/src/readme-files/custom-screen) for more information about custom-screens.
 
 Image source: [https://www.pexels.com](https://www.pexels.com)
+
+## Live Configuration
+When you are running this project live via npm, you'll need to pass some additional URL parameters. Here is an example URL to connect to the "DeliveryService" application: http://localhost:3000/?appName=DeliveryService&baseUrl=http://localhost:80/services/mobile#
