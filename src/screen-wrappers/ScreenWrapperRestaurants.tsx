@@ -1,4 +1,4 @@
-import { createSetValuesRequest, REQUEST_KEYWORDS, ScreenWrapper, useAPI, useDataProviders, useRowSelect } from "@sibvisions/reactui";
+import { createSetValuesRequest, REQUEST_KEYWORDS, ScreenWrapper, useAPI, useDataProviders, useRowSelect } from '@sibvisions/reactui';
 import React, { FC, useState, useEffect } from "react";
 import { Rating } from 'primereact/rating';
 import { Slider } from 'primereact/slider';

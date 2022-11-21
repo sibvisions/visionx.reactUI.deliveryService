@@ -4,7 +4,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@sibvisions/reactui": "^1.0.43",
+    "@sibvisions/reactui": "^1.0.46",
     "@types/jest": "^27.5.2",
     "@types/node": "^16.18.3",
     "@types/react": "^18.0.25",
@@ -15,11 +15,14 @@
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-scripts": "5.0.1",
+    "react-transition-group": "^4.4.5",
     "typescript": "^4.9.3",
     "underscore": "^1.13.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "init-unix": "cp -R node_modules/@sibvisions/reactui/resources public",
+    "init-win": "Xcopy /E /I .\\node_modules\\@sibvisions\\reactui\\resources .\\public",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
