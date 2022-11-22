@@ -21,10 +21,11 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "init-unix": "cp -R node_modules/@sibvisions/reactui/resources public",
+    "init-unix": "cp -R ./node_modules/@sibvisions/reactui/resources ./public",
     "init-win": "Xcopy /E /I .\\node_modules\\@sibvisions\\reactui\\resources .\\public",
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build-unix": "react-scripts build && touch ./build/.custom",
+    "build-win": "react-scripts build && type nul >> .\\build\\.custom",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },

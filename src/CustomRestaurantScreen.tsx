@@ -83,9 +83,9 @@ const CustomRestaurantScreen:FC<{}> = () => {
                 options={restaurants} 
                 onChange={(e) => setSelectedRestaurant(e.value)} 
                 optionLabel="label" />
-            <div style={{ display: "flex", flexDirection: "column", alignItems: "center", position: "relative" }}>
+            <div style={{ display: "flex", flexDirection: "column", alignItems: "center", position: "relative", width: "100%" }}>
                 <span style={{ position: "absolute", right: "0px", color: "#d4d8dc", zIndex: "1" }} >source: https://www.pexels.com/ </span>
-                <Galleria value={selectedImages} numVisible={3} item={itemTemplate} thumbnail={thumbnailTemplate} style={{ maxWidth: "1200px", flex: "1" }} /> 
+                <Galleria value={selectedImages} numVisible={3} item={itemTemplate} thumbnail={thumbnailTemplate} style={{ width: "100%", flex: "1" }} /> 
             </div>
             
             
