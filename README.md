@@ -10,9 +10,10 @@ The application is available in VisionX' marketplace for free. It already contai
 - In your `package.json` file, create a "init" command which copies files from reactui's resource folder to your projects public folder. 
 ```
   "scripts": {
+    ...
     "init-unix": "cp -R node_modules/@sibvisions/reactui/resources public",
     "init-win": "Xcopy /E /I .\\node_modules\\@sibvisions\\reactui\\resources .\\public",
-    "start": "react-scripts start", ...
+    ...
   }
 ``` 
 (This is necessary for themes and color-schemes and other resources)
