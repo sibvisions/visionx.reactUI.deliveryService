@@ -24,18 +24,18 @@ The application is available in VisionX' marketplace for free. It already contai
 - You are running this project live via npm and you'll need to pass some additional URL parameters. Here is an example URL to connect to the "DeliveryService" application: http://localhost:3000/?appName=DeliveryService&baseUrl=http://localhost:80/services/mobile# (CORS is enabled by default, so different URLs are no problem with VisionX)
 
 ## Building & Integrating
-- **After** you've run the init command mentioned earlier to copy the resorces, run your build command to built your react application.
-- You can either modify your build command to create a `.custom` file automatically like this:
-```
+- Run the command `npm run build` to build your react application for production use
+- VisionX requires a `.custom` for the custom react UI to stop automatic updates. You can either modify your build command like this:
+  ```
   "scripts": {
     ...
     "build-unix": "react-scripts build && touch ./build/.custom",
     "build-win": "react-scripts build && type nul >> .\\build\\.custom",
     ...
   }
-```
-or create a `.custom` file by yourself. This prevents VisionX from overwriting your custom build
-- Delete the contents of rad/apps/\<app-name>/WebContent/ui and put your build into this directory
+  ```
+  or create a `.custom` file by yourself. Run the command `npm run build-win` or`npm run build-unix`.
+- Updating VisionX application is easy. Simply delete the contents of \<VISIONX_DIR\>/rad/apps/DeliveryService/WebContent/ui and copy your built files into this directory
 
 ## What is customized?
 
