@@ -8,15 +8,16 @@ The application is available in VisionX' marketplace for free. It already contai
 - If you are using create-react-app make sure to downgrade react to v17.0.x (https://stackoverflow.com/a/71908461)
 - Run `npm install @sibvisions/reactui` to install the reactUI as dependency
 - In your `package.json` file, create "init" commands which copy files from reactui's resource folder to your projects public folder, e.g.
-```
+  
+  ```
   "scripts": {
     ...
     "init-unix": "cp -R node_modules/@sibvisions/reactui/resources public",
     "init-win": "Xcopy /E /I .\\node_modules\\@sibvisions\\reactui\\resources .\\public",
     ...
   }
-``` 
-(This is necessary for themes and color-schemes and other resources)
+  ``` 
+  (This is necessary for themes and color-schemes and other resources)
 - Run your init command with `npm run init`
 
 ## Live testing/running
@@ -26,6 +27,7 @@ The application is available in VisionX' marketplace for free. It already contai
 ## Building & Integrating
 - Run the command `npm run build` to build your react application for production use
 - VisionX requires a `.custom` for the custom react UI to stop automatic updates. You can either modify your build command like this:
+  
   ```
   "scripts": {
     ...
