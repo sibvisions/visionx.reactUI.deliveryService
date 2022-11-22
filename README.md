@@ -36,7 +36,7 @@ The application is available in VisionX' marketplace for free. It already contai
     ...
   }
   ```
-  or create a `.custom` file by yourself. Run the command `npm run build-win` or`npm run build-unix`.
+  or create a `.custom` file by yourself. Run the command `npm run build-win` or `npm run build-unix`.
 - Updating VisionX application is easy. Simply delete the contents of \<VISIONX_DIR\>/rad/apps/DeliveryService/WebContent/ui and copy your built files into this directory
 
 ## What is customized?
