@@ -7,7 +7,7 @@ The application is available in VisionX' marketplace for free. It already contai
 ## Initial Configuration
 - If you are using create-react-app make sure to downgrade react to v17.0.x (https://stackoverflow.com/a/71908461)
 - Run `npm install @sibvisions/reactui` to install the reactUI as dependency
-- In your `package.json` file, create a "init" command which copies files from reactui's resource folder to your projects public folder. 
+- In your `package.json` file, create "init" commands which copy files from reactui's resource folder to your projects public folder, e.g.
 ```
   "scripts": {
     ...
@@ -19,9 +19,9 @@ The application is available in VisionX' marketplace for free. It already contai
 (This is necessary for themes and color-schemes and other resources)
 - Run your init command with `npm run init`
 
-## Live Configuration
+## Live testing/running
 - Run the application via `npm start`
-- en you are running this project live via npm, you'll need to pass some additional URL parameters. Here is an example URL to connect to the "DeliveryService" application: http://localhost:3000/?appName=DeliveryService&baseUrl=http://localhost:80/services/mobile#
+- You are running this project live via npm and you'll need to pass some additional URL parameters. Here is an example URL to connect to the "DeliveryService" application: http://localhost:3000/?appName=DeliveryService&baseUrl=http://localhost:80/services/mobile# (CORS is enabled by default, so different URLs are no problem with VisionX)
 
 ## Building & Integrating
 - **After** you've run the init command mentioned earlier to copy the resorces, run your build command to built your react application.
